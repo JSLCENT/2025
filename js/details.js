@@ -6,7 +6,7 @@ function getQueryParam(name) {
 
 async function fetchData(index) {
     try {
-        const response = await fetch('data.json');
+        const response = await fetch('https://jslcent.github.io/2025/data.json');
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
         }
